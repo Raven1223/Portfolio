@@ -14,12 +14,12 @@ let skills = ["Typing", "Diagnosing", "Fixing"];
 
 let skillsSection = document.querySelector("#skills");
 
-let skillsList = skillSection.querySelector("ul");
+let skillsList = skillsSection.querySelector("ul");
 
 for (i=0; i < skills.length; i++){
 let skill = document.createElement("li");
 
-skill.innerHTML = [i];
+skill.innerHTML = skills[i];
 
 skillsList.appendChild(skill);
 }
