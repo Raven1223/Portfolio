@@ -1,0 +1,61 @@
+body
+{
+background-color: beige;
+}
+h1{
+color: purple;
+}
+h2{
+color: green;
+}
+p{
+font-family: Monaco, Monospace;
+}
+label{
+color: black;
+}
+label{
+font-size: 15px;
+}
+p{
+  border: 5px solid gray;
+  margin: 10px 900px 50px 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 200x;
+  margin-left: 0px;
+  background-color: gray;
+}
+p1{
+border: 5px solid gray;
+  margin: 10px 1000px 50px 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 200x;
+  margin-left: 0px;
+  background-color: gray;
+}
+p2{
+  border: 5px solid gray;
+  margin: 25x 10000x 75x 400x;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 200x;
+  margin-left: 0px;
+  background-color: gray;
+
+}
+p3{
+border: 5px solid gray;
+  margin: 25x 100x 75x 400x;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 200x;
+  margin-left: 0px;
+  background-color: gray;
+}
+button{
+color: black;
+background-color: #4CAF50;
+}
+
