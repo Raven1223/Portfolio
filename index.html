@@ -9,6 +9,16 @@
 <body>
 
 <h1>Shaun Zulu</h1>
+
+<!--Top Nav Stars here-->
+<div class="topnav">
+  <a class="active" href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#skills">Skills</a>
+  <a href="#connect">Connect</a>
+</div>
+
+
 <section>
 <h2>About</h2>
 
@@ -18,14 +28,17 @@
 <section>
 <h2>Experience</h2>
 
-<p1>I have worked as a warehouse worker at UPS.</p1>
+<div class="grid-container">
+  <div class="grid-item">I have worked as a warehouse worker at UPS</div>
+  <div class="grid-item">Worked on a team to build and program a robot that could follow a track, pick up a load, drop off the load in an assigned bay, and get over obstacles successfully</div>
+ </div>
+
 </section>
 <section id = "skills">
 <h2>Skills</h2>
-<p2>Building Computers</p2>
-   <p2>Diagnosing Computers</p2>
-   <p2>Working on Cars</p2>	
+	
 <ul>
+</ul>
 </section>
 <section>
 
@@ -35,8 +48,12 @@
 </section>
 
 <section>
-<h2>Leave a Message<h2>
-<form name= "leave_message">
+<h2>Leave a Message</h2>
+
+
+
+
+<form name= "leave_message" id="leave_message">
 <div>
 <label for="name">Name</label>
 <input type="text" name="name" id="name" required>
