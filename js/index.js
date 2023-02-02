@@ -66,6 +66,33 @@ messageList.appendChild(removeButton);
 
 
 messageForm.reset();
+
 });
+			//URL
+let gitHubRequest = new XMLHttpRequest();
+	gitHubRequest.open("GET", "https://api.github.com/users/Raven1223/repos", true);
+		gitHubRequest.send();
+
+			//Handle Response from Server
+gitHubRequest.onload = function() {
+		let repositories = JSON.parse(this.response);
+			console.log(repositories);
+
+			//Display Repositories in List
+let projectSection = document.getElementById("projects");
+let projectList = projectSection.querySelector("ul");
+
+for(let i=0; i< repositories.length; i++){
+	let project = document.createElement("li");
+
+	project.innerHTML = `<a href="https://www.github.com/Raven1223/${repositories[i].name}">`
+	+ repositories[i].name + '</a>';
+
+	projectList.appendChild(project);
+}
+
+}
+
+
 
 
