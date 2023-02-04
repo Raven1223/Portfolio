@@ -6,6 +6,7 @@ h1{
 color: purple;
 }
 h2{
+  text-align: center;
 color: green;
 }
 p{
@@ -17,42 +18,46 @@ color: black;
 label{
 font-size: 15px;
 }
+footer .copyright-footer{ display: flex;
+  justify-content: center;
+  border: 5px solid rgb(14, 13, 13);  
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 200x;
+  margin-left: 0px;
+  background-color:#ddd;
+  width:10%;
+}
+footer{ display: flex;
+  justify-content: center;  
+}
 p{
   border: 5px solid gray;
-  margin: 10px 900px 50px 0px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-right: 200x;
-  margin-left: 0px;
+  display: flex;
+  justify-content: center;
+  width: 50%;
   background-color: gray;
 }
-p1{
-border: 5px solid gray;
-  margin: 10x 1000x 50x 0x;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-right: 200x;
-  margin-left: 0px;
+section{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+li{
+border: 5px solid gray;  
+  margin-bottom: 10px;
+  
   background-color: gray;
 }
-p2{
-  border: 5px solid gray;
-  margin: 100px 200px 100px 30px;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  margin-right: 200x;
-  margin-left: 0px;
-  background-color: gray;
-
+#leave_message{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-p3{
-border: 5px solid gray;
-  margin: 25x 100x 75x 400x;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-right: 200x;
-  margin-left: 0px;
-  background-color: gray;
+#leave_message div{display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
 }
 button{
 color: black;
@@ -112,7 +117,12 @@ grid-template-columns: 200px 1fr;
 /* Code for formatting the skills section */
 
 ul{
-list-style: square outside none;
+list-style-type: none;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-left: 0px;
+width:100%;
 }
 
 /* MEDIA QUERY */

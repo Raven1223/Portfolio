@@ -4,8 +4,8 @@ let thisYear = today.getFullYear();
 
 let footer = document.querySelector("footer");
 
-let copyright = document.createElement("p");
-
+let copyright = document.createElement("span");
+copyright.classList.add("copyright-footer");
 copyright.innerHTML =`Shaun Zulu ${thisYear}`;
 
 footer.appendChild(copyright);
@@ -68,10 +68,10 @@ messageList.appendChild(removeButton);
 messageForm.reset();
 
 });
+/*
 			//URL
-let gitHubRequest = new XMLHttpRequest();
-	gitHubRequest.open("GET", "https://api.github.com/users/Raven1223/repos", true);
-		gitHubRequest.send();
+//let gitHubRequest = new XMLHttpRequest();
+	
 
 			//Handle Response from Server
 gitHubRequest.onload = function() {
@@ -90,9 +90,29 @@ for(let i=0; i< repositories.length; i++){
 
 	projectList.appendChild(project);
 }
-
 }
+*/
 
+//gitHubRequest.open("GET", "https://api.github.com/users/Raven1223/repos", true);
+	//	gitHubRequest.send();
 
+								//6.2 starts here
+fetch('https://api.github.com/users/Raven1223/repos')
+.then(response => response.json())								
+.then(repositories => {
+			console.log(repositories);
 
+			//Display Repositories in List
+let projectSection = document.getElementById("projects");
+let projectList = projectSection.querySelector("ul");
 
+for(let i=0; i< repositories.length; i++){
+	let project = document.createElement("li");
+
+	project.innerHTML = `<a href="https://www.github.com/Raven1223/${repositories[i].name}">`
+	+ repositories[i].name + '</a>';
+	
+
+	projectList.appendChild(project);
+}
+})
