@@ -44,10 +44,10 @@ section{
   align-items: center;
 }
 li{
-border: 5px solid gray;  
+border: 5px solid rgb(23, 67, 185);  
   margin-bottom: 10px;
   
-  background-color: gray;
+  background-color: rgb(32, 162, 185);
 }
 #leave_message{
   display: flex;
@@ -124,6 +124,12 @@ align-items: center;
 padding-left: 0px;
 width:100%;
 }
+ul{  
+  border: 200x solid rgb(23, 67, 185);  
+    margin-bottom: center;
+    
+    background-color: rgb(32, 162, 185);
+  }
 
 /* MEDIA QUERY */
 /* Mobile Phone*/
